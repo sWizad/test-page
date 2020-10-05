@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL Orbiter Renderer.</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css?u=1" type="text/css">
+    <link rel="stylesheet" href="css/webgl.css?u=1" type="text/css">
+  <style>
+  </style>
+  </head>
+
+  <body>
+    <div id="canvas-clip">  
+      <canvas id="webgl-canvas"></canvas>
+    </div>
+    <canvas id="glcanvas"></canvas>
+    <canvas id="texturecanvas" style="display:none"></canvas>
+    <div class="info">
+      <span id="fps"></span>
+      Scene: <span id="scenename"></span>
+      <div class="ss">
+        <span class="desc">Rendered planes:</span>
+        <span id="amount"></span>
+        <div id="rendered_planes"></div>
+      </div>
+
+      <div class="ss">
+        <span class="desc">Show plane:</span>
+        <span id="plane">0</span>
+        <div id="show_plane"></div>
+      </div>
+
+      <div class="ss">
+        <span class="desc">Rotation plane:</span>
+        <span id="center">0</span>
+        <div id="rotation_plane"></div>
+      </div>
+
+      <div class="ss">
+        <span class="desc">Spin speed:</span>
+        <span id="speed">0</span>
+        <div id="spin_speed"></div>
+      </div>
+      <div class="ss">
+        <span class="desc">Spin radius:</span>
+        <span id="radius">30</span>
+        <div id="spin_radius"></div>
+      </div>
+      <select id="path-selector">
+        <option value="spiral">Spiral</option>
+        <option value="spiral_llff">Spiral (LLFF)</option>
+        <option value="horizontal">Horizontal</option>
+        <option value="veritcal">Vertical</option>
+        <option value="linear_horizontal">Linear (Horizontal)</option>
+        <option value="linear_vertical">Linear (Vertical)</option>
+      </select>
+    </div>
+
+    <div id="workspace"></div>
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <script src="js/third-party/gl-matrix-min.js"></script>
+
+  <script src="js/third-party/wglu/wglu-program.js"></script>
+  <script src="js/third-party/wglu/wglu-stats.js"></script>
+  <script src="js/third-party/wglu/wglu-texture.js"></script>
+  <script src="js/third-party/wglu/wglu-url.js"></script>
+
+  <script src="js/vr-samples-util.js"></script>
+  <script src="js/gl-utils.js"></script>
+  <script src="js/loader2.js?u=1"></script>
+</html>
