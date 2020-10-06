@@ -189,261 +189,51 @@
 </div>
 
 <div class="main">
-    <h2>Experiment 1: number of PSVs</h2>
-    <center>
-        <br>Validation Loss</br>
-        <img src="images/ex1.png" class="img">
-    </center>
+    <h2>Example MPIs in interactive viewer</h2>
 
-    We present object in an interactive viewer and compare the result between different number of psv. <br>
+    We present several scenes in an interactive viewer.<br>
     <p>
 
     <center>
         <div class=ib><a href="orbiter_viewer2/index2.html?scene=data/cards">
-            <img src="orbiter_viewer2/data/catds/ss.png" class="img" width="300"></a><br>#PSV = 0 (Simple Train)<b>(The best)</b><br>
-            <a href="orbiter_viewer2/index2.html?scene=data/catds">Viewer</a>|
-            <a href="orbiter_viewer2/data/catds/model_config.json">Config</a>
+            <img src="orbiter_viewer2/data/catds/ss.png" class="img" width="300"></a><br>Cards<br>
         </div>
 
-         <div class=ib><a href="orbiter_viewer2/index2.html?scene=data/ex1/psv1">
-            <img src="orbiter_viewer2/data/ex1/psv1/ss.png" class="img" width="300"></a><br>#PSV = 1<br>
-             <a href="orbiter_viewer2/index2.html?scene=data/ex1/psv1">Viewer</a>|
-             <a href="orbiter_viewer2/data/ex1/psv1/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><a href="orbiter_viewer2/index2.html?scene=data/ex1/psv2">
-            <img src="orbiter_viewer2/data/ex1/psv2/ss.png" class="img" width="300"></a><br>#PSV = 2<br>
-            <a href="orbiter_viewer2/index2.html?scene=data/ex1/psv2">Viewer</a>|
-            <a href="orbiter_viewer2/data/ex1/psv2/model_config.json">Config</a>
-       </div>
-
-       <div class=ib><a href="orbiter_viewer2/index2.html?scene=data/ex1/psv3">
-           <img src="orbiter_viewer2/data/ex1/psv3/ss.png" class="img" width="300"></a><br>#PSV = 3<br>
-           <a href="orbiter_viewer2/index2.html?scene=data/ex1/psv3">Viewer</a>|
-           <a href="orbiter_viewer2/data/ex1/psv3/model_config.json">Config</a>
-      </div>
-
-      <div class=ib><a href="orbiter_viewer2/index2.html?scene=data/ex1/psv4">
-          <img src="orbiter_viewer2/data/ex1/psv4/ss.png" class="img" width="300"></a><br>#PSV = 4 (Normal PSV)<br>
-          <a href="orbiter_viewer2/index2.html?scene=data/ex1/psv4">Viewer</a>|
-          <a href="orbiter_viewer2/data/ex1/psv4/model_config.json">Config</a>
-     </div>
     </center>
 
     <p>
 </div>
 
 <div class="main">
-    <h2>Experiment 2: VGG loss</h2>
-    <center>
-        <br>Validation Loss</br>
-        <img src="images/ex2.png" class="img">
-    </center>
+    <h2>Comparison  on NeRF's dataset</h2>
 
-    We present object in an interactive viewer and compare the result between different Level of VGG loss. <br>
-    In conclusion, adding vgg loss will increas runtime but a little bit of VGG loss will bring some visible detail to the result <br>
+    <br>
     <p>
 
     <center>
-        <div class=ib><a href="orbiter_viewer/index2.html?scene=data/ex3/vgg0">
-            <img src="orbiter_viewer/data/ex3/vgg0/ss.png" class="img" width="300"></a><br>VGG = 0 (Simple Train)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex3/vgg0">Viewer</a>|
-            <a href="orbiter_viewer/data/ex3/vgg0/model_config.json">Config</a>
-        </div>
+        View a <a href="result_nerf/index.html">comparison</a> on test scenes for case.
 
-         <div class=ib><a href="orbiter_viewer/index2.html?scene=data/ex3/vgg2">
-            <img src="orbiter_viewer/data/ex3/vgg2/ss.png" class="img" width="300"></a><br>VGG = 2<b>(The best)</b><br>
-             <a href="orbiter_viewer/index2.html?scene=data/ex3/vgg2">Viewer</a>|
-             <a href="orbiter_viewer/data/ex3/vgg2/model_config.json">Config</a>
-        </div>
-        
-       <div class=ib><a href="orbiter_viewer/index2.html?scene=data/ex3/vgg10">
-           <img src="orbiter_viewer/data/ex3/vgg10/ss.png" class="img" width="300"></a><br>VGG = 10<br>
-           <a href="orbiter_viewer/index2.html?scene=data/ex3/vgg10">Viewer</a>|
-           <a href="orbiter_viewer/data/ex3/vgg10/model_config.json">Config</a>
-      </div>
-
-      <div class=ib><a href="orbiter_viewer/index2.html?scene=data/ex3/vgg50">
-          <img src="orbiter_viewer/data/ex3/vgg50/ss.png" class="img" width="300"></a><br>VGG = 50<br>
-          <a href="orbiter_viewer/index2.html?scene=data/ex3/vgg50">Viewer</a>|
-          <a href="orbiter_viewer/data/ex3/vgg50/model_config.json">Config</a>
-     </div>
     </center>
 
     <p>
 </div>
 
 <div class="main">
-    <h2>Experiment 3: Learning rate</h2>
-    <center>
-        <br>Validation Loss</br>
-        <img src="images/ex3_1.png" class="img">
-        <img src="images/ex3_2.png" class="img">
-    </center>
-    <center>
-        <br>Validation Loss</br>
-    </center>
+    <h2>Comparison  on DeepView's Spaces dataset</h2>
 
-    We compare the result between different learning rate initial and learning rate decay.<br>
-    <center>decayed_learning_rate = lr_int * decay_rate ^ (global_step / 1000) ..</center>
-     
+    <br>
     <p>
 
     <center>
-        <div class=ib><br>lr=0.02, decay=0.5<br> (p1p0)<br>
-            <a href="orbiter_viewer2/index2.html?scene=data/ex5/p1p0">Viewer</a>|
-            <a href="orbiter_viewer2/data/ex5/p1p0/model_config.json">Config</a>
-        </div>
+        View a <a href="result_nerf/index.html">comparison</a> on test scenes for case.
 
-        <div class=ib><br>lr=0.05, decay=0.5<br> (p2p0)<br>
-             <a href="orbiter_viewer2/index2.html?scene=data/ex5/p2p0">Viewer</a>|
-             <a href="orbiter_viewer2/data/ex5/p2p0/model_config.json">Config</a>
-        </div>
-        
-        <div class=ib><br>lr=0.1, decay=0.5<br> (p3p0)<br>
-           <a href="orbiter_viewer2/index2.html?scene=data/ex5/p3p0">Viewer</a>|
-           <a href="orbiter_viewer2/data/ex5/p3p0/model_config.json">Config</a>
-      </div>
-
-        <div class=ib><br>lr=0.2, decay=0.5<br> (p4p0)<br><b>(The best)</b><br>
-          <a href="orbiter_viewer2/index2.html?scene=data/ex5/p4p0">Viewer</a>|
-          <a href="orbiter_viewer2/data/ex5/p4p0/model_config.json">Config</a>
-     </div>
     </center>
-    <center>
-        <div class=ib><br>lr=0.02, decay=0.75<br> (p1p1)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex5/p1p1">Viewer</a>|
-            <a href="orbiter_viewer/data/ex5/p1p1/model_config.json">Config</a>
-        </div>
 
-        <div class=ib><br>lr=0.05, decay=0.75<br> (p2p1)<br>
-             <a href="orbiter_viewer/index2.html?scene=data/ex5/p2p1">Viewer</a>|
-             <a href="orbiter_viewer/data/ex5/p2p1/model_config.json">Config</a>
-        </div>
-        
-        <div class=ib><br>lr=0.1, decay=0.75<br> (p3p1)<br><b>(The best)</b><br>
-           <a href="orbiter_viewer/index2.html?scene=data/ex5/p3p1">Viewer</a>|
-           <a href="orbiter_viewer/data/ex5/p3p1/model_config.json">Config</a>
-      </div>
-
-        <div class=ib><br>lr=0.2, decay=0.75<br> (p4p1)<br>
-          <a href="orbiter_viewer/index2.html?scene=data/ex5/p4p1">Viewer</a>|
-          <a href="orbiter_viewer/data/ex5/p4p1/model_config.json">Config</a>
-     </div>
-    </center>
-    <center>
-        <div class=ib><br>lr=0.02, decay=1.0<br> (p1p2)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex5/p1p2">Viewer</a>|
-            <a href="orbiter_viewer/data/ex5/p1p2/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>lr=0.05, decay=1.0<br> (p2p2)<br>
-             <a href="orbiter_viewer/index2.html?scene=data/ex5/p2p2">Viewer</a>|
-             <a href="orbiter_viewer/data/ex5/p2p2/model_config.json">Config</a>
-        </div>
-        
-        <div class=ib><br>lr=0.1, decay=1.0<br> (p3p2)<br>
-           <a href="orbiter_viewer/index2.html?scene=data/ex5/p3p2">Viewer</a>|
-           <a href="orbiter_viewer/data/ex5/p3p2/model_config.json">Config</a>
-      </div>
-
-        <div class=ib><br>lr=0.2, decay=1.0<br> (p4p2)<br>
-          <a href="orbiter_viewer/index2.html?scene=data/ex5/p4p2">Viewer</a>|
-          <a href="orbiter_viewer/data/ex5/p4p2/model_config.json">Config</a>
-     </div>
-    </center>
     <p>
 </div>
 
-<div class="main">
-    <h2>Experiment 4: coarse to fine training</h2>
-    <center>
-        <br>Validation Loss</br>
-        <img src="images/ex4_1.png" class="img">
-        <img src="images/ex4_2.png" class="img">
-    </center>
 
-    We compare the result between different level of coarse-to-fine trining.<br>
-    We start training with coarse on 2^i downscale and slowly change to 2^(i-1) downscale every j loops. We test on i = 0, 1, 2, 3, 4 and j = 200, 400, 800.<br>
-    In conclusion, deaper level of coarse-to-fine is better amd slower decay is better. coarse-to-fine can also reduces computational time. <br>
-     
-    <p>
-    <center>
-        <div class=ib><br>i = 0 (baseline no coarse2fine)<br> (p0)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex7/p0">Viewer</a>|
-            <a href="orbiter_viewer/data/ex7/p0/model_config.json">Config</a>
-        </div>
 
-    </center>
-
-    <center>
-        <div class=ib><br>i = 1, j = 200<br> (p1p0)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex7/p1p0">Viewer</a>|
-            <a href="orbiter_viewer/data/ex7/p1p0/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>i = 1, j = 400<br> (p1p1)<br>
-             <a href="orbiter_viewer/index2.html?scene=data/ex7/p1p1">Viewer</a>|
-             <a href="orbiter_viewer/data/ex7/p1p1/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>i = 1, j = 800<br> (p1p2)<br>
-          <a href="orbiter_viewer/index2.html?scene=data/ex7/p1p2">Viewer</a>|
-          <a href="orbiter_viewer/data/ex7/p1p2/model_config.json">Config</a>
-     </div>
-    </center>
-
-    <center>
-        <div class=ib><br>i = 2, j = 200<br> (p2p0)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex7/p2p0">Viewer</a>|
-            <a href="orbiter_viewer/data/ex7/p2p0/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>i = 2, j = 400<br> (p2p1)<br>
-             <a href="orbiter_viewer/index2.html?scene=data/ex7/p2p1">Viewer</a>|
-             <a href="orbiter_viewer/data/ex7/p2p1/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>i = 2, j = 800<br> (p2p2)<br>
-          <a href="orbiter_viewer/index2.html?scene=data/ex7/p2p2">Viewer</a>|
-          <a href="orbiter_viewer/data/ex7/p2p2/model_config.json">Config</a>
-     </div>
-    </center>
-    <center>
-        <div class=ib><br>i = 3, j = 200<br> (p3p0)<br>
-            <a href="orbiter_viewer/index2.html?scene=data/ex7/p3p0">Viewer</a>|
-            <a href="orbiter_viewer/data/ex7/p3p0/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>i = 3, j = 400<br> (p3p1)<br>
-             <a href="orbiter_viewer/index2.html?scene=data/ex7/p3p1">Viewer</a>|
-             <a href="orbiter_viewer/data/ex7/p3p1/model_config.json">Config</a>
-        </div>
-
-        <div class=ib><br>i = 3, j = 800<br> (p3p2)<br><b>(The best)</b><br>
-          <a href="orbiter_viewer/index2.html?scene=data/ex7/p3p2">Viewer</a>|
-          <a href="orbiter_viewer/data/ex7/p3p2/model_config.json">Config</a>
-     </div>
-    </center>
-    <p>
-</div>
-
-<div class="main">
-    <h2>Experiment 5: mpi interpolation</h2>
-    <center>
-        <br>Validation Loss</br>
-        <img src="images/ex5_0.png" class="img">
-    </center>
-
-    We compare the result between different number of sharing mpi and degree of approximated mpi.<br>
-    We train every model with 40 mpi and share mpic 1 mpic per N mpia. For N = 2, 4, 8. And degree of approximated mpi = 0, 1, 2<br>
-    In conlusion, higher degree longer time to compute. There are no significant improvement when incresas the degree until the number of shared layer is high.
-    Higher number of  shared layer fewer time to compute but a bit reduces the quality.
-    <p>
-
-  
-    <p>
-</div>
 
 <div class="footer">
     <div class="footerG">
